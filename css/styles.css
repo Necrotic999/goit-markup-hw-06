@@ -185,10 +185,17 @@ header{
     gap: 40px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (min-width: 768px) {
     .contacts-list {
         flex-direction: column;
         row-gap: 12px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+.contacts-list {
+        flex-direction: row;
         justify-content: center;
     }
 }
@@ -204,6 +211,7 @@ header{
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.04em;
+    font-style: normal;
   }
 }
 
@@ -410,6 +418,12 @@ header{
             margin-bottom: 8px;
 }
 
+@media only screen and (min-width: 768px) {
+.content .content-list .content-title{
+    text-align: left;
+  }
+}
+
 @media only screen and (min-width: 1158px) {
 .content .content-list .content-title{
     font-size: 20px;
@@ -488,11 +502,11 @@ header{
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
 .info .info-list .info-list-item{
     width: calc((100% - 24px) / 2);
   }
-}
+} */
 
 @media only screen and (min-width: 1158px) {
 .info .info-list .info-list-item{
@@ -669,7 +683,7 @@ header{
 
 @media only screen and (min-width: 1158px) {
    .footer{
-        padding: 100px 156px;
+        padding: 100px 0;
   }
 }
 
@@ -706,21 +720,20 @@ header{
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px 24px;
-        padding: 0;
     }
 }
 
 @media only screen and (min-width: 1158px) {
    .footer-container{
         flex-wrap: nowrap;
-        padding: 0;
-        justify-content: space-between;
+        gap: 0;
   }
 }
 
-.logo-box{
-    /* margin-right: 120px; */
-    /* margin-bottom: 72px; */
+@media only screen and (min-width: 1158px) {
+.logo-box {
+        margin-right: 120px;
+    }
 }
 
 .footer .footer-logo .footer-logo-item{
@@ -743,7 +756,6 @@ header{
 .soc-media{
     display: flex;
     flex-direction: column;
-    /* margin-right: 80px; */
     margin: 0 auto;
 }
 
@@ -751,6 +763,12 @@ header{
 .soc-media{
         margin: 0;
   }
+}
+
+@media only screen and (min-width: 1158px) {
+.soc-media {
+        margin-right: 80px;
+    }
 }
 
 .media-text{
@@ -843,13 +861,19 @@ header{
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         outline: none;
         color: #fff;
-        width: 264px;
+        width: 288px;
         height: 40px;
         font-size: 12px;
         line-height: 2;
         letter-spacing: 0.04em;
         padding-left: 16px;
         opacity: 0.3;  
+}
+
+@media only screen and (min-width: 768px) {
+   .footer-input{
+        width: 264px;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
